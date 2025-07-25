@@ -174,7 +174,6 @@ class SelectExercise : AppCompatActivity() {
         }
     }
 
-
     // 모든 운동 데이터를 초기화하는 함수
     private fun initAllExercises() {
         allExercises.add(Exercise("푸쉬업 (Push-up)", "상체", "가슴, 어깨, 삼두근을 단련하는 대표적인 상체 운동입니다.", "30초", "약 5~7 kcal"))

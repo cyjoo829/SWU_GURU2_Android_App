@@ -7,7 +7,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.hometraing.Exercise //오류로 인해 추가함
 
-
 class ExerciseAdapter(
     private var exerciseList: List<Exercise>,
     private val onItemClick: (Exercise) -> Unit // 람다 함수를 통해 클릭 이벤트 전달
