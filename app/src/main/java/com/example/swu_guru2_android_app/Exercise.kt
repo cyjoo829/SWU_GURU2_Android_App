@@ -2,7 +2,6 @@ package com.example.hometraing
 
 import kotlin.time.Duration
 
-
 //운동 요소
 data class Exercise(
     val name: String,
