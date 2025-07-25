@@ -5,11 +5,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.hometraing.Exercise
+import com.example.hometraing.Exercise //오류로 인해 추가함
 
 
 class ExerciseAdapter(
-    private val exerciseList: List<Exercise>,
+    private var exerciseList: List<Exercise>,
     private val onItemClick: (Exercise) -> Unit // 람다 함수를 통해 클릭 이벤트 전달
 ) : RecyclerView.Adapter<ExerciseAdapter.ExerciseViewHolder>() {
 
@@ -33,4 +33,10 @@ class ExerciseAdapter(
     }
 
     override fun getItemCount() = exerciseList.size
+
+    //검색 목록 업데이트
+    fun updateList(newList: List<Exercise>) {
+        exerciseList = newList
+        notifyDataSetChanged()
+    }
 }
